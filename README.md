@@ -21,3 +21,12 @@ To calibrate your ESC to work properly with your Xbox 360 controller run the
 1. Ensure that the controller is connected to your Raspberry PI.
 2. Ensure that pigpio daemon is running.
 3. Start the [run_rcpi_controller.py]() script
+
+## Controlls
+RT: Move forward  
+LT: Move backward  
+Left Joystick: Turn  
+Xbox: Reset  
+Back: Reset throttle  
+Hat Up/Down: Movement throttle  
+Hat Left/Right: Turn throttle
