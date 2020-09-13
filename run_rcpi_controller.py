@@ -31,18 +31,14 @@ def restore_throttle(button):
 def set_throttle(axis):
     global turn_throttle
     global move_throttle
-    if axis.x==1:
-        if turn_throttle < MAX_TURN_THROTTLE:
-            turn_throttle+=20
-    if axis.x==-1:
-        if turn_throttle > 0:
-            turn_throttle-=20
-    if axis.y==1:
-        if move_throttle < MAX_MOVE_THROTTLE:
-            move_throttle+=10
-    if axis.y==-1:
-        if move_throttle > 0:
-            move_throttle-=10
+    if axis.x==1 and turn_throttle < MAX_TURN_THROTTLE:
+        turn_throttle+=20
+    if axis.x==-1 and turn_throttle > 0:
+        turn_throttle-=20
+    if axis.y==1 and move_throttle < MAX_MOVE_THROTTLE:
+        move_throttle+=10
+    if axis.y==-1 and move_throttle > 0:
+        move_throttle-=10
 
 def turn(axis):
     global turn_throttle
@@ -78,7 +74,7 @@ try:
         print('\nControlls>>>>>>>>>>>>\nRT: Move forward\nLT: Move backward\nXbox: Reset\nBack: Reset throttle\nHat Up/Down: Movement throttle\nHat Left/Right: Turn throttle')
 
         signal.pause()
-except (KeyboardInterrupt, SystemExit) as e:
+except (KeyboardInterrupt) as e:
     pass
 finally:
     finalize()
