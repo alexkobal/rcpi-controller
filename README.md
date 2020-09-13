@@ -11,8 +11,7 @@ Control your RC car with Xbox360 controller and Raspberry PI
 ```sudo killal pigpiod```  
 
 ## Wiring
-
-![]()
+![](./images/wiring.png)
 
 ## Calibration
 There's a video about calibrating your ESC with a standard RC remote:  
