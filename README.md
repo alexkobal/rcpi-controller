@@ -10,6 +10,10 @@ Control your RC car with Xbox360 controller and Raspberry PI
 **To stop the pigpio daemon:**  
 ```sudo killal pigpiod```  
 
+## Wiring
+
+![]()
+
 ## Calibration
 There's a video about calibrating your ESC with a standard RC remote:  
 https://www.youtube.com/watch?v=MiKeYJnYjxU  
